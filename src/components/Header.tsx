@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
+import logoImage from "@/assets/group-sogi-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,8 +24,12 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-navy rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">GS</span>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-white shadow-sm">
+                <img 
+                  src={logoImage} 
+                  alt="Group SOGI Logo" 
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-sogi-navy">GROUP SOGI</h1>
