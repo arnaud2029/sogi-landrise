@@ -237,6 +237,7 @@ const PropertyListings = () => {
             <Button 
               size="lg" 
               className="cta-secondary text-lg px-8 py-6"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Calendar className="w-5 h-5 mr-2" />
               Prendre rendez-vous

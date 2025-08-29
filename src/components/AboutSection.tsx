@@ -96,7 +96,10 @@ const AboutSection = () => {
               ))}
             </ul>
 
-            <Button className="cta-primary text-lg px-8 py-4">
+            <Button 
+              className="cta-primary text-lg px-8 py-4"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Découvrir nos projets
             </Button>
           </div>

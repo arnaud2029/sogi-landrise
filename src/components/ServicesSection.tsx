@@ -126,6 +126,7 @@ const ServicesSection = () => {
             <Button 
               size="lg" 
               className="cta-primary text-lg px-8 py-6"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Demander un devis
             </Button>
@@ -133,6 +134,7 @@ const ServicesSection = () => {
               size="lg" 
               variant="outline"
               className="text-lg px-8 py-6 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-sogi-navy"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Prendre rendez-vous
             </Button>

@@ -61,6 +61,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="cta-primary text-lg px-8 py-6 font-semibold group"
+              onClick={() => document.getElementById('offres')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Découvrir nos offres
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -69,6 +70,7 @@ const HeroSection = () => {
               size="lg" 
               variant="outline"
               className="text-lg px-8 py-6 font-semibold bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-sogi-navy transition-all duration-300"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contactez-nous
             </Button>
