@@ -21,7 +21,7 @@ const FAQSection = () => {
     },
     {
       question: "Comment réserver un lot ?",
-      answer: "Vous pouvez réserver via le formulaire de réservation sur le site, par WhatsApp au +225 07 67 57 56 56 ou en venant directement à notre agence à Assabou, Yamoussoukro (derrière la boulangerie épi d'or).",
+      answer: "Vous pouvez réserver via le formulaire de réservation sur le site, par WhatsApp au +225 67 57 56 56 ou en venant directement à notre agence à Assabou, Yamoussoukro (derrière la boulangerie épi d'or).",
       category: "Réservation"
     },
     {
@@ -46,7 +46,7 @@ const FAQSection = () => {
     },
     {
       question: "Où êtes-vous situés et comment vous contacter ?",
-      answer: "Nous sommes situés à Assabou, Yamoussoukro, derrière la boulangerie épi d'or. Vous pouvez nous contacter au +225 07 67 57 56 56, par email à groupsogi15@gmail.com, ou via WhatsApp pour une réponse rapide.",
+      answer: "Nous sommes situés à Assabou, Yamoussoukro, derrière la boulangerie épi d'or. Vous pouvez nous contacter au +225 67 57 56 56, par email à groupsogi15@gmail.com, ou via WhatsApp pour une réponse rapide.",
       category: "Contact"
     }
   ];
@@ -121,6 +121,7 @@ const FAQSection = () => {
             <Button 
               size="lg" 
               className="cta-primary text-lg px-8 py-6"
+              onClick={() => window.open("tel:+22567575656")}
             >
               <Phone className="w-5 h-5 mr-2" />
               Appeler maintenant
@@ -128,6 +129,7 @@ const FAQSection = () => {
             <Button 
               size="lg" 
               className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg font-semibold shadow-cta hover:shadow-hover transition-all duration-300 hover:scale-105"
+              onClick={() => window.open("https://api.whatsapp.com/send?phone=22567575656&text=" + encodeURIComponent("Bonjour Group SOGI, je viens de votre site web"), "_blank")}
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               WhatsApp

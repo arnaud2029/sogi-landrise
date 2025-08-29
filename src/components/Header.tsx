@@ -54,11 +54,15 @@ const Header = () => {
               variant="outline"
               size="sm"
               className="border-sogi-navy text-sogi-navy hover:bg-sogi-navy hover:text-white"
+              onClick={() => window.open("tel:+22567575656")}
             >
               <Phone className="w-4 h-4 mr-2" />
               Appeler
             </Button>
-            <Button className="cta-primary">
+            <Button 
+              className="cta-primary"
+              onClick={() => window.open("https://api.whatsapp.com/send?phone=22567575656&text=" + encodeURIComponent("Bonjour Group SOGI, je viens de votre site web"), "_blank")}
+            >
               <MessageCircle className="w-4 h-4 mr-2" />
               Contact
             </Button>
@@ -99,11 +103,15 @@ const Header = () => {
                   variant="outline"
                   size="sm"
                   className="border-sogi-navy text-sogi-navy hover:bg-sogi-navy hover:text-white"
+                  onClick={() => window.open("tel:+22567575656")}
                 >
                   <Phone className="w-4 h-4 mr-2" />
-                  +225 07 67 57 56 56
+                  +225 67 57 56 56
                 </Button>
-                <Button className="cta-primary">
+                <Button 
+                  className="cta-primary"
+                  onClick={() => window.open("https://api.whatsapp.com/send?phone=22567575656&text=" + encodeURIComponent("Bonjour Group SOGI, je viens de votre site web"), "_blank")}
+                >
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Contactez-nous
                 </Button>

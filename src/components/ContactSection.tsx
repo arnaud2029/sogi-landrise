@@ -55,7 +55,7 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Téléphone",
-      details: ["+225 07 67 57 56 56", "+225 27 33 77 32 18"],
+      details: ["+225 67 57 56 56", "+225 27 33 77 32 18"],
       color: "text-sogi-orange"
     },
     {
@@ -124,14 +124,14 @@ const ContactSection = () => {
             <div className="space-y-4">
               <Button 
                 className="w-full cta-primary"
-                onClick={() => window.open("tel:+2250767575656")}
+                onClick={() => window.open("tel:+22567575656")}
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Appeler maintenant
               </Button>
               <Button 
                 className="w-full bg-green-500 hover:bg-green-600 text-white"
-                onClick={() => window.open("https://api.whatsapp.com/send?phone=2250767575656&text=Bonjour%20Group%20SOGI%20-%20Je%20souhaite%20des%20informations%20sur%20vos%20terrains.", "_blank")}
+                onClick={() => window.open("https://api.whatsapp.com/send?phone=22567575656&text=" + encodeURIComponent("Bonjour Group SOGI, je viens de votre site web"), "_blank")}
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 WhatsApp

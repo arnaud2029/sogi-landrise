@@ -22,12 +22,12 @@ const FloatingActions = () => {
   ]);
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent("Bonjour Group SOGI - Je souhaite des informations sur vos terrains.");
-    window.open(`https://api.whatsapp.com/send?phone=2250767575656&text=${message}`, '_blank');
+    const message = encodeURIComponent("Bonjour Group SOGI, je viens de votre site web");
+    window.open(`https://api.whatsapp.com/send?phone=22567575656&text=${message}`, '_blank');
   };
 
   const handleCall = () => {
-    window.open("tel:+2250767575656", '_self');
+    window.open("tel:+22567575656", '_self');
   };
 
   const sendMessage = () => {
@@ -46,13 +46,13 @@ const FloatingActions = () => {
       } else if (msg.includes("prix") || msg.includes("coût")) {
         botResponse = "💰 Nos prix varient selon la localisation :\n\n• Terrains résidentiels : 2M - 3,5M FCFA\n• Terrains industriels : 3,5M - 7M FCFA\n• Facilités de paiement disponibles\n• Possibilité de paiement échelonné\n\nContactez-nous pour un devis personnalisé !";
       } else if (msg.includes("rdv") || msg.includes("rendez-vous") || msg.includes("visite")) {
-        botResponse = "📅 Pour prendre rendez-vous :\n\n1. Via WhatsApp : +225 07 67 57 56 56\n2. Par téléphone : Appelez directement\n3. À notre bureau : Assabou, Yamoussoukro\n\nNos heures : Lun-Sam 8h-18h\nSouhaitez-vous que je vous redirige vers WhatsApp ?";
+        botResponse = "📅 Pour prendre rendez-vous :\n\n1. Via WhatsApp : +225 67 57 56 56\n2. Par téléphone : Appelez directement\n3. À notre bureau : Assabou, Yamoussoukro\n\nNos heures : Lun-Sam 8h-18h\nSouhaitez-vous que je vous redirige vers WhatsApp ?";
       } else if (msg.includes("service") || msg.includes("commodité")) {
         botResponse = "🛠️ Nos services incluent :\n\n✅ Aménagement foncier complet\n✅ Décapage & bornage professionnel\n✅ Ouverture des voies d'accès\n✅ Plan d'urbanisme conforme\n✅ Assistance certificat foncier\n✅ BTP & infrastructure\n\nTous nos lotissements sont livrés clés en main !";
       } else if (msg.includes("contact") || msg.includes("conseiller") || msg.includes("agent")) {
-        botResponse = "🤝 Contactez directement nos conseillers :\n\n📞 Téléphone : +225 07 67 57 56 56\n📧 Email : groupsogi15@gmail.com\n📍 Bureau : Assabou, Yamoussoukro\n💬 WhatsApp : Réponse rapide garantie\n\nJe peux vous rediriger vers WhatsApp maintenant ?";
+        botResponse = "🤝 Contactez directement nos conseillers :\n\n📞 Téléphone : +225 67 57 56 56\n📧 Email : groupsogi15@gmail.com\n📍 Bureau : Assabou, Yamoussoukro\n💬 WhatsApp : Réponse rapide garantie\n\nJe peux vous rediriger vers WhatsApp maintenant ?";
       } else {
-        botResponse = "Merci pour votre message ! 😊\n\nPour une réponse plus détaillée, je vous recommande de :\n\n• 📞 Appeler : +225 07 67 57 56 56\n• 💬 WhatsApp : Contact direct\n• 📧 Email : groupsogi15@gmail.com\n\nNotre équipe vous répondra rapidement !";
+        botResponse = "Merci pour votre message ! 😊\n\nPour une réponse plus détaillée, je vous recommande de :\n\n• 📞 Appeler : +225 67 57 56 56\n• 💬 WhatsApp : Contact direct\n• 📧 Email : groupsogi15@gmail.com\n\nNotre équipe vous répondra rapidement !";
       }
 
       setChatHistory(prev => [...prev, { type: "bot", message: botResponse }]);

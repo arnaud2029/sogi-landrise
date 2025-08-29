@@ -206,6 +206,7 @@ const PropertyListings = () => {
                   <Button 
                     variant="outline" 
                     className="flex-1 border-green-500 text-green-600 hover:bg-green-50"
+                    onClick={() => window.open("https://api.whatsapp.com/send?phone=22567575656&text=" + encodeURIComponent("Bonjour Group SOGI, je viens de votre site web"), "_blank")}
                   >
                     <Phone className="w-4 h-4 mr-2" />
                     WhatsApp
@@ -228,9 +229,10 @@ const PropertyListings = () => {
             <Button 
               size="lg" 
               className="cta-primary text-lg px-8 py-6"
+              onClick={() => window.open("tel:+22567575656")}
             >
               <Phone className="w-5 h-5 mr-2" />
-              +225 07 67 57 56 56
+              +225 67 57 56 56
             </Button>
             <Button 
               size="lg" 
