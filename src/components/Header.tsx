@@ -23,9 +23,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-navy rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">GS</span>
-              </div>
+              <img 
+                src="/lovable-uploads/6c8870ee-4b18-4a2c-8860-0e1ed9c343c0.png" 
+                alt="Group SOGI Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h1 className="text-xl font-bold text-sogi-navy">GROUP SOGI</h1>
                 <p className="text-xs text-foreground-muted">Aménagement & BTP</p>
