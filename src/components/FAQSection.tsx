@@ -10,13 +10,13 @@ import { Button } from "@/components/ui/button";
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Quels types de terrains proposez-vous ?",
-      answer: "Nous proposons des parcelles résidentielles (700 m² / 800 m²) en lotissements équipés, prêtes à construire. Nous avons également des terrains industriels et commerciaux dans la zone industrielle de Yamoussoukro.",
+      question: "Quels types de terrains à vendre proposez-vous à Yamoussoukro ?",
+      answer: "Nous proposons des parcelles résidentielles (700 m² / 800 m²) en lotissements équipés avec toutes commodités, prêtes à construire à Yamoussoukro. Nous avons également des terrains industriels et commerciaux dans la zone industrielle de Yamoussoukro pour investissement immobilier rentable.",
       category: "Offres"
     },
     {
-      question: "Quels documents recevrons-nous après achat ?",
-      answer: "Vous recevrez une attestation d'attribution et nous vous orientons vers l'obtention du certificat foncier. Nous fournissons également une assistance complète pour le bornage et l'élaboration du plan d'urbanisme.",
+      question: "Comment acheter une maison ou terrain à Yamoussoukro avec Group Sogi ?",
+      answer: "Vous recevrez une attestation d'attribution et nous vous orientons vers l'obtention du certificat foncier. Nous fournissons également une assistance complète pour le bornage et l'élaboration du plan d'urbanisme pour votre achat immobilier à Yamoussoukro.",
       category: "Documents"
     },
     {
@@ -63,9 +63,10 @@ const FAQSection = () => {
             <span className="text-sogi-navy font-medium">Foire Aux Questions</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-sogi-navy mb-6">
-            Questions Fréquentes
+            Questions Fréquentes - Immobilier Yamoussoukro
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto leading-relaxed">
+            Tout savoir sur l'achat terrain et investissement immobilier à Yamoussoukro. 
             Trouvez rapidement les réponses à vos questions sur nos terrains, services et procédures.
           </p>
         </div>
@@ -109,10 +110,12 @@ const FAQSection = () => {
         {/* Contact CTA */}
         <div className="text-center bg-gradient-navy rounded-2xl p-12">
           <h3 className="text-3xl font-bold text-white mb-4">
-            Une question spécifique ?
+            Une question sur nos biens immobiliers à Yamoussoukro ?
           </h3>
           <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-            Notre équipe est là pour vous accompagner. Contactez-nous directement pour une réponse personnalisée.
+            Notre équipe d'experts en immobilier Yamoussoukro Côte d'Ivoire est là pour vous accompagner 
+            dans votre projet d'achat maison, vente terrain ou investissement immobilier rentable. 
+            Contactez-nous directement pour une réponse personnalisée.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

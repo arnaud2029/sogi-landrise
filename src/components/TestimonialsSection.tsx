@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
       role: "Propriétaire à N'gbékro",
       location: "Yamoussoukro",
       rating: 5,
-      text: "Excellent service ! Group SOGI a aménagé mon terrain de 800m² avec un professionnalisme remarquable. Le bornage, le décapage et l'ouverture des voies ont été réalisés dans les délais. Je recommande vivement !",
+      text: "Excellent service ! Group SOGI a aménagé mon terrain de 800m² avec un professionnalisme remarquable. Le bornage, le décapage et l'ouverture des voies ont été réalisés dans les délais pour mon investissement immobilier à Yamoussoukro. Je recommande vivement cette agence immobilière !",
       image: "/api/placeholder/60/60",
       project: "Terrain résidentiel 800m²"
     },
@@ -77,11 +77,11 @@ const TestimonialsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-sogi-navy mb-6">
-            Témoignages Clients
+            Témoignages Clients - Immobilier Yamoussoukro
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto leading-relaxed">
-            Découvrez les expériences de nos clients satisfaits qui ont fait confiance à GROUP SOGI 
-            pour leurs projets fonciers et immobiliers.
+            Découvrez les expériences de nos clients qui ont fait confiance à Group Sogi pour leurs 
+            projets d'achat terrain, vente maison et investissement immobilier à Yamoussoukro Côte d'Ivoire.
           </p>
         </div>
 
@@ -139,12 +139,13 @@ const TestimonialsSection = () => {
 
         {/* Trust Indicators */}
         <div className="bg-gradient-navy rounded-2xl p-12 text-white text-center">
-          <h3 className="text-3xl font-bold mb-4">
-            Rejoignez nos clients satisfaits !
+          <h3 className="text-3xl font-bold text-white mb-4">
+            Prêt pour votre projet immobilier à Yamoussoukro ?
           </h3>
           <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-            Plus de 1000 clients nous font confiance pour leurs projets fonciers. 
-            Découvrez pourquoi GROUP SOGI est le leader de l'aménagement foncier à Yamoussoukro.
+            Rejoignez nos clients satisfaits et réalisez votre rêve d'acquisition immobilière. 
+            De l'achat terrain à la vente maison, Group Sogi vous accompagne dans tous vos projets 
+            d'investissement immobilier rentable à Yamoussoukro.
           </p>
           
           {/* Stats */}

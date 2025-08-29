@@ -97,11 +97,12 @@ const PropertyListings = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-sogi-navy mb-6">
-            Offres de Terrains
+            Terrains à Vendre Yamoussoukro
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto leading-relaxed">
-            Découvrez nos terrains disponibles à Yamoussoukro avec toutes les commodités. 
-            Prix attractifs et facilités de paiement disponibles.
+            Découvrez nos terrains constructibles et biens immobiliers à Yamoussoukro Côte d'Ivoire 
+            avec toutes commodités. Investissement immobilier rentable avec prix attractifs et 
+            facilités de paiement disponibles.
           </p>
         </div>
 

@@ -52,11 +52,12 @@ const AboutSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-sogi-navy mb-6">
-            À Propos de GROUP SOGI
+            Meilleure Agence Immobilière à Yamoussoukro
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto leading-relaxed">
-            Leader en aménagement foncier à Yamoussoukro, nous transformons vos projets immobiliers 
-            en réalité avec expertise et professionnalisme.
+            Leader en aménagement foncier et immobilier Yamoussoukro Côte d'Ivoire, nous transformons 
+            vos projets d'achat maison, location appartement et investissement immobilier en réalité 
+            avec expertise et professionnalisme.
           </p>
         </div>
 
@@ -68,14 +69,16 @@ const AboutSection = () => {
             </h3>
             <p className="text-lg text-foreground-muted mb-6 leading-relaxed">
               Chez GROUP SOGI, nous croyons que chaque terrain représente bien plus qu'un simple investissement : 
-              c'est votre héritage, votre avenir, votre sécurité. Implantée au cœur de Yamoussoukro, 
-              notre entreprise accompagne particuliers et investisseurs dans la réalisation de leurs projets fonciers.
+              c'est votre héritage, votre avenir, votre sécurité. Spécialisée dans l'immobilier Yamoussoukro, 
+              notre agence immobilière accompagne particuliers et investisseurs dans la vente maison, 
+              location appartement et tous projets de biens immobiliers à Yamoussoukro.
             </p>
             
             <p className="text-lg text-foreground-muted mb-8 leading-relaxed">
               De l'aménagement initial jusqu'à l'obtention des documents officiels, nous assurons un service 
               complet et personnalisé. Notre expertise couvre le décapage, le bornage, l'ouverture des voies, 
-              l'élaboration des plans d'urbanisme et l'assistance pour l'obtention du certificat foncier.
+              l'élaboration des plans d'urbanisme et l'assistance pour obtenir le certificat foncier. 
+              Investir dans l'immobilier à Yamoussoukro n'a jamais été aussi simple avec Group SOGI.
             </p>
 
             <ul className="space-y-3 mb-8">

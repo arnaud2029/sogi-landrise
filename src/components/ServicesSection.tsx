@@ -63,11 +63,12 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-sogi-navy mb-6">
-            Nos Services
+            Services Immobiliers Yamoussoukro
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto leading-relaxed">
-            De l'aménagement foncier à l'obtention des documents officiels, 
-            nous vous accompagnons à chaque étape de votre projet immobilier.
+            De l'aménagement foncier à l'obtention des documents officiels pour votre vente maison 
+            ou achat terrain à Yamoussoukro, nous vous accompagnons à chaque étape de votre projet 
+            d'investissement immobilier rentable en Côte d'Ivoire.
           </p>
         </div>
 

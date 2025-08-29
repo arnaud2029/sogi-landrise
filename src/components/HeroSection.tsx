@@ -7,11 +7,11 @@ const HeroSection = () => {
     <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with gradient overlay */}
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Construction et aménagement foncier GROUP SOGI" 
-          className="w-full h-full object-cover"
-        />
+          <img 
+            src={heroImage} 
+            alt="Agence immobilière Yamoussoukro - Vente terrain et immobilier Côte d'Ivoire GROUP SOGI" 
+            className="w-full h-full object-cover"
+          />
         <div className="absolute inset-0 bg-gradient-hero"></div>
         <div className="absolute inset-0 opacity-50" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M20 20c0 11.046-8.954 20-20 20s-20-8.954-20-20 8.954-20 20-20 20 8.954 20 20zm0-20c11.046 0 20 8.954 20 20s-8.954 20-20 20-20-8.954-20-20 8.954-20 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -32,13 +32,14 @@ const HeroSection = () => {
           </h1>
           
           <h2 className="text-2xl md:text-3xl font-semibold text-white/90 mb-8">
-            Aménagement Foncier & BTP
+            Agence Immobilière à Yamoussoukro - Côte d'Ivoire
           </h2>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Lotissements clés en main — Bornage, plan d'urbanisme, certificat foncier. 
-            Votre terrain, votre héritage… Investissez à Yamoussoukro avec Group SOGI.
+            Spécialiste en vente de terrains et immobilier Yamoussoukro. Aménagement foncier, 
+            bornage, plan d'urbanisme, certificat foncier. Votre terrain, votre héritage… 
+            Investissez dans l'immobilier à Yamoussoukro avec Group SOGI.
           </p>
 
           {/* Features */}
