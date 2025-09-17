@@ -41,8 +41,33 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    
+    // Construct WhatsApp message with form data
+    const message = `Bonjour Group SOGI, je viens de votre site web.
+
+📝 Informations de contact :
+• Nom : ${formData.name}
+• Téléphone : ${formData.phone}
+${formData.email ? `• Email : ${formData.email}` : ''}
+• Sujet : ${formData.subject}
+
+💬 Message :
+${formData.message}
+
+Merci de me recontacter rapidement.`;
+
+    // Redirect to WhatsApp with the constructed message
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=2250767575656&text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
+    
+    // Reset form after sending
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: ""
+    });
   };
 
   const contactInfo = [
@@ -124,14 +149,14 @@ const ContactSection = () => {
             <div className="space-y-4">
               <Button 
                 className="w-full cta-primary"
-                onClick={() => window.open("tel:+22567575656")}
+                onClick={() => window.open("tel:+2250767575656")}
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Appeler maintenant
               </Button>
               <Button 
                 className="w-full bg-green-500 hover:bg-green-600 text-white"
-                onClick={() => window.open("https://api.whatsapp.com/send?phone=22567575656&text=" + encodeURIComponent("Bonjour Group SOGI, je viens de votre site web"), "_blank")}
+                onClick={() => window.open("https://api.whatsapp.com/send?phone=2250767575656&text=" + encodeURIComponent("Bonjour Group SOGI, je viens de votre site web"), "_blank")}
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 WhatsApp
@@ -242,7 +267,22 @@ const ContactSection = () => {
                       <Send className="w-5 h-5 mr-2" />
                       Envoyer le message
                     </Button>
-                    <Button type="button" variant="outline" className="flex-1">
+                    <Button 
+                      type="button" 
+                      variant="outline" 
+                      className="flex-1"
+                      onClick={() => {
+                        const appointmentMessage = `Bonjour Group SOGI, je viens de votre site web et j'aimerais prendre rendez-vous pour discuter de mon projet immobilier.
+
+${formData.name ? `• Nom : ${formData.name}` : ''}
+${formData.phone ? `• Téléphone : ${formData.phone}` : ''}
+${formData.email ? `• Email : ${formData.email}` : ''}
+
+Merci de me proposer des créneaux disponibles.`;
+                        const whatsappUrl = `https://api.whatsapp.com/send?phone=2250767575656&text=${encodeURIComponent(appointmentMessage)}`;
+                        window.open(whatsappUrl, "_blank");
+                      }}
+                    >
                       <Calendar className="w-5 h-5 mr-2" />
                       Prendre rendez-vous
                     </Button>
